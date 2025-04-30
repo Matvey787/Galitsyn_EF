@@ -79,5 +79,7 @@ data_volts_str = [str(item) for item in data_volts]
 with open("data.txt", "w") as file:
     file.write("\n".join(data_volts_str))
 
-plt.plot(data_times, data_volts)
+plt.plot(data_times, data_volts, color="red")
+plt.xlabel("t, время")
+plt.ylabel("U, напряжение")
 plt.show()
